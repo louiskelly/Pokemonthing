@@ -68,6 +68,7 @@ function trainer(){
 }
 $('#reroller').click(function(){
 	$('.pokecontainer').css('background-image','none');
+	$('.pokemon').css('filter','none');
 	$(".poketext").remove();
 	pokeroller(1);
 	pokeroller(2);

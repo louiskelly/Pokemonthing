@@ -67,6 +67,7 @@ function trainer(){
 	$('#trainercontainer').css('background-position','-'+randhorozontal+'px -'+randvertical+'px');
 }
 $('#reroller').click(function(){
+	$('.pokecontainer').css('background-image','none');
 	$(".poketext").remove();
 	pokeroller(1);
 	pokeroller(2);

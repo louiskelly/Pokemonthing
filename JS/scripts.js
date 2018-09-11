@@ -45,8 +45,6 @@ function pokeroller(pokenum){
 		$('#poke'+pokenum).css('background-image','url(sprites.png)');
 	}
 	if (moe == 20){
-		randhorozontal = ((Math.floor(Math.random()*28)*80)-80);
-		randvertical = 80;
 		$('#poke'+pokenum).css('background-image','url(moesprites3.png)');
 		$('#poketext'+pokenum).append('<p class="poketext">Moe!</p>');
 	}

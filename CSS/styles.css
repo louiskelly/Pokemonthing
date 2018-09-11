@@ -1,3 +1,22 @@
+
+#trainercontainer{
+	width: 80px;
+	height: 80px;
+	margin: 0 auto;
+	background-image: url('../trainersprites.png');
+	margin-bottom: 30px;
+}
+#reroller{
+	font-family: 'VT323', monospace;
+	font-size: 30px;
+	text-align: center;
+	width: 100px;
+	height: 40px;
+	border: 4px solid darkgrey;
+	background-color: lightgrey;
+	cursor: pointer;
+	margin: 0 auto;
+}
 .pokecontainer{
 	background-size: 100px 80px;
 	background-repeat: no-repeat;

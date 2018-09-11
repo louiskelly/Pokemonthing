@@ -59,13 +59,20 @@ function pokeroller(pokenum){
 		$('#poketext'+pokenum).append('<p class="poketext">Odd Colored</p>');
 	}
 	/**/
-
-
-
 }
-pokeroller(1);
-pokeroller(2);
-pokeroller(3);
-pokeroller(4);
-pokeroller(5);
-pokeroller(6);
+/**/
+function trainer(){
+	randhorozontal = ((Math.floor(Math.random()*12)*80)-80);
+	randvertical = ((Math.floor(Math.random()*10)*80)-80);
+	$('#trainercontainer').css('background-position','-'+randhorozontal+'px -'+randvertical+'px');
+}
+$('#reroller').click(function(){
+	$(".poketext").remove();
+	pokeroller(1);
+	pokeroller(2);
+	pokeroller(3);
+	pokeroller(4);
+	pokeroller(5);
+	pokeroller(6);
+	trainer();
+})

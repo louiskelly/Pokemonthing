@@ -4,6 +4,7 @@ var shiney;
 var inverted;
 var bright;
 var oddcolor;
+var moe;
 
 var level;
 var friendly;
@@ -20,7 +21,7 @@ function pokeroller(pokenum){
 	inverted = Math.floor(Math.random()*10+1);
 	level = Math.floor(Math.random()*100+1);
 	friendly = Math.floor(Math.random()*40+1);
-
+	moe = Math.floor(Math.random()*20+1);
 	/**/
 	$('#poketext'+pokenum).append('<p class="poketext">LVL '+level+'</p>');
 	/**/
@@ -30,7 +31,7 @@ function pokeroller(pokenum){
 	}
 	if (friendly == 1){
 		$('#poketext'+pokenum).append('<p class="poketext">Menacing!</p>');
-		$('#pokecontainer'+pokenum).css('background-image','url(menacing.gif)');
+		$('#pokecontainer'+pokenum).css('background-image','url(menacing2.gif)');
 	}
 	if (level >= 90){
 		$('#poketext'+pokenum).append('<p class="poketext">Strong!</p>');
@@ -43,6 +44,13 @@ function pokeroller(pokenum){
 	} else {
 		$('#poke'+pokenum).css('background-image','url(sprites.png)');
 	}
+	if (moe == 20){
+		randhorozontal = ((Math.floor(Math.random()*28)*80)-80);
+		randvertical = 80;
+		$('#poke'+pokenum).css('background-image','url(moesprites3.png)');
+		$('#poketext'+pokenum).append('<p class="poketext">Moe!</p>');
+	}
+
 	/**/
 	if (inverted == 10){
 		$('#poke'+pokenum).css('filter','invert(100%)');
